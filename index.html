@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viwport" content="width=device-width,user-scalable=no">
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="b">
+		<div data-role="header">
+			<h1>Lista de Tareas</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-theme="c" data-inset="true">
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top ui-btn-up-undefined"><h2>Tareas de Sergio</h2></li>
+				<li><a href="#tarea">Comer</a><a href="#" data-role="button" data-icon="check" data-theme="c"></a></li>
+				<li><a href="#">Trabajar</a><a href="#" data-role="button" data-icon="check" data-theme="c"></a></li>
+				<li><a href="#">Comprar pañales</a><a href="#" data-role="button" data-icon="check" data-theme="c"></a></li>
+				<li><a href="#">Estudiar</a><a href="#" data-role="button" data-icon="check" data-theme="c"></a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="footer1">
+			<div data-role="navbar" data-theme="a">
+				<ul>
+					<li><a href="#" data-icon="plus" data-iconpos="notext"></a></li>
+	                <li><a href="#" data-icon="check" data-iconpos="notext"></a></li>
+	                <li><a href="#" data-icon="delete" data-iconpos="notext"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" data-theme="b" id="tarea">
+		<div data-role="header">
+			<h1>Comer con tania</h1>
+		</div>
+		<div data-role="content">
+			<p>Ir a comer con tania al Diegos</p>
+			<label>Fecha</label>
+			<a href="#" data-role="button" data-theme="e" data-inline="true">Realizada</a>
+			<a href="#" data-role="button" data-theme="c" data-inline="true">Volver</a>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="footer1">
+			<div data-role="navbar" data-theme="a">
+				<ul>
+					<li><a href="#" data-icon="plus" data-iconpos="notext" ></a></li>
+	                <li><a href="#" data-icon="check" data-iconpos="notext"></a></li>
+	                <li><a href="#" data-icon="delete" data-iconpos="notext"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
